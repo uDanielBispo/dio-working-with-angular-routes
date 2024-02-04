@@ -1,0 +1,25 @@
+<div>
+  <ul>
+    <!--
+      alterar href para router link,
+      pois assim não fica recarregando e reiniciando a aplicação
+    -->
+    <li><a
+          [routerLink]="['']"
+          [routerLinkActive]="['activated']"
+          [routerLinkActiveOptions]="{exact: true}"
+          >
+          Home
+        </a>
+    </li>
+
+    <li>
+      <a
+        [routerLink]="['/portifolio']"
+        [routerLinkActive]="['activated']">
+        Portifolio
+      </a>
+    </li>
+  </ul>
+
+</div>
